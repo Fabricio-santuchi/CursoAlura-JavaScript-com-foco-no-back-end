@@ -1,8 +1,10 @@
 //Calcular média
 
-const notas = [10,6.5,8,7.5];
-let valorFinal = 0;
+const notas = [10, 6.5, 8, 7.5];
+let media = 0;
 for(i=0;i<notas.length;i++){
-    valorFinal += notas[i]
+    media += notas[i]
 }
-console.log(valorFinal);
+
+media = media / notas.length;
+console.log(`A media é ${media}`);
