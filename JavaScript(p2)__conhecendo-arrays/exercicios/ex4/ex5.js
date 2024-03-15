@@ -4,6 +4,7 @@ const numeros = [6, 9, 12, 15, 18, 21];
 console.log(numeros);
 
 // Utilize o método forEach() para multiplicar cada elemento do array por 3 e exibir o resultado de cada multiplicação. Depois, utilize o método findIndex() para encontrar o índice do número 18 no array.
+
 numeros.forEach((valor) => {
     let mul = valor * 3;
     console.log(`O valor ${valor} multiplicado por 3 é igual: ${mul}`);
