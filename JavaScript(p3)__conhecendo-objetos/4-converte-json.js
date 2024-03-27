@@ -1,4 +1,4 @@
-const estudante = require('./4-estudante.json');
+const estudante = require('./estudante.json');
 
 const stringEstudante = JSON.stringify(estudante);
 

@@ -1,5 +1,5 @@
 // import estudante from './4-estudante.json';
-const estudante = require('./4-estudante.json');
+const estudante = require('./estudante.json');
 
 // console.log(estudante);
 // console.log(typeof estudante);
