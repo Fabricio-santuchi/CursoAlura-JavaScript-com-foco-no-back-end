@@ -2,18 +2,18 @@
 const anoAtual = new Date().getFullYear();
 
 const livro = {
-    titulo: 'Astronomia: os astros, a ciência, a vida cotidiana',
-    autor: 'Marcelo Girardi Schappo',
-    anoPublicacao: 2022,
-    genero: 'Astronomia',
-    idadePublicacao: anoAtual - 2022,
-    avaliacao: {
-        nota: 4.5, 
-        comentario: "Ótima leitura!" 
-    }
+  titulo: "Astronomia: os astros, a ciência, a vida cotidiana",
+  autor: "Marcelo Girardi Schappo",
+  anoPublicacao: 2022,
+  genero: "Astronomia",
+  idadePublicacao: anoAtual - 2022,
+  avaliacao: {
+    nota: 4.5,
+    comentario: "Ótima leitura!",
+  },
 };
 
-delete livro['avaliacao'];
+delete livro["avaliacao"];
 
 console.log(`Detalhes do Livro:
     Título: ${livro.titulo}

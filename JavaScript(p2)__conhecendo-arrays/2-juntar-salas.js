@@ -1,5 +1,5 @@
-const salaJS = ['Evaldo', 'Camis', 'Mari'];
-const salaPython = ['Ju', 'Leo', 'Raquel'];
+const salaJS = ["Evaldo", "Camis", "Mari"];
+const salaPython = ["Ju", "Leo", "Raquel"];
 
 const array = salaJS.concat(salaPython);
 

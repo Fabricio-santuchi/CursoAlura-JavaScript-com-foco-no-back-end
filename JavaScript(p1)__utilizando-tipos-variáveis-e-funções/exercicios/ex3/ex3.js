@@ -5,4 +5,4 @@ const permissaoADM = false;
 
 const resultado = estaLogado && permissaoADM;
 
-console.log('Administrador logado no sistema:', resultado);
+console.log("Administrador logado no sistema:", resultado);

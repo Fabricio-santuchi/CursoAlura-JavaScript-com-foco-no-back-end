@@ -5,5 +5,5 @@ const deposito = 200;
 const saque = 400;
 const operacao = saldo - saque;
 
-console.log('Saldo:', saldo); 
-console.log('Saldo após saque:', operacao);
+console.log("Saldo:", saldo);
+console.log("Saldo após saque:", operacao);

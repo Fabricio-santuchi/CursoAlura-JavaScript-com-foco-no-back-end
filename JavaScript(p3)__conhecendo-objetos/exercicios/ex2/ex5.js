@@ -13,27 +13,27 @@
 // Realize operações de depósito e saque na conta bancária do cliente usando as funções do objeto contaBancaria e, em seguida, chame a função para exibir as informações atualizadas no console.
 
 const contaBancaria = {
-    titular: 'Fabricio sanduiche',
-    saldo: 1300.00,
-    depositar: function(valor) {
-        this.saldo += valor;
-    },
-    sacar: function(valor) {
-        if(valor <= this.saldo){
-            this.saldo -= valor;
-        }else{
-            console.log("Saldo insuficiente para saque.");
-        }
-    },
+  titular: "Fabricio sanduiche",
+  saldo: 1300.0,
+  depositar: function (valor) {
+    this.saldo += valor;
+  },
+  sacar: function (valor) {
+    if (valor <= this.saldo) {
+      this.saldo -= valor;
+    } else {
+      console.log("Saldo insuficiente para saque.");
+    }
+  },
 };
 
 const cliente = {
-    nome: 'Fabricio sanduiche',
-    conta: contaBancaria,
+  nome: "Fabricio sanduiche",
+  conta: contaBancaria,
 };
 
-function mostrarSaldo(cliente){
-    console.log(`Nome: ${cliente.nome}\nSaldo: R$${cliente.conta.saldo}`)
+function mostrarSaldo(cliente) {
+  console.log(`Nome: ${cliente.nome}\nSaldo: R$${cliente.conta.saldo}`);
 }
 
 cliente.conta.depositar(500);

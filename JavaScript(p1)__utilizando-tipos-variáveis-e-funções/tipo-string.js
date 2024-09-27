@@ -1,7 +1,7 @@
-const estudante = 'Fabricio';
-const docente = 'Ana';
+const estudante = "Fabricio";
+const docente = "Ana";
 const cumprimento = "nosso lema é 'estudar bastante!'";
-const citacao = `Ju diz: "nosso lema é 'estudar bastante!'"`
+const citacao = `Ju diz: "nosso lema é 'estudar bastante!'"`;
 
 //console.log(estudante)
 //console.log(docente)
@@ -11,5 +11,5 @@ const citacao = `Ju diz: "nosso lema é 'estudar bastante!'"`
 
 //template string
 
-const senha = 'SenhaSegura123' + estudante.toUpperCase();
-console.log(senha)
+const senha = "SenhaSegura123" + estudante.toUpperCase();
+console.log(senha);

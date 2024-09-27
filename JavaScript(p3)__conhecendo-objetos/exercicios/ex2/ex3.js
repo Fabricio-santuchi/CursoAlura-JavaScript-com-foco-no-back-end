@@ -16,34 +16,34 @@
 // Chame a função filtrarPorCidade passando a lista pessoas e uma cidade fictícia como argumentos e imprima no console o resultado obtido.
 
 const pessoas = [
-    {nome: 'João', idade: 17, cidade: 'São Paulo'},
-    {nome: 'dvanie', idade: 21, cidade: 'Bahia'},
-    {nome: 'Renan', idade: 26, cidade: 'Rio de Janeiro'}
+  { nome: "João", idade: 17, cidade: "São Paulo" },
+  { nome: "dvanie", idade: 21, cidade: "Bahia" },
+  { nome: "Renan", idade: 26, cidade: "Rio de Janeiro" },
 ];
 
 function mostrarListaPessoas(pessoas) {
-    console.log('Lista de Pessoas:');
-    pessoas.forEach(pessoas => {
-        console.log(`
+  console.log("Lista de Pessoas:");
+  pessoas.forEach((pessoas) => {
+    console.log(`
             Nome: ${pessoas.nome}.
             idade: ${pessoas.idade}.
             cidade: ${pessoas.cidade}.
         `);
-    });
+  });
 }
 
-function filtrarPorCidade(pessoas,cdd) {
-    return pessoas.filter((pessoas) => pessoas.cidade === cdd);
+function filtrarPorCidade(pessoas, cdd) {
+  return pessoas.filter((pessoas) => pessoas.cidade === cdd);
 }
 
 pessoas.push({
-    nome: 'Fabricio',
-    idade: 24,
-    cidade: 'Campos dos goytacazes'
+  nome: "Fabricio",
+  idade: 24,
+  cidade: "Campos dos goytacazes",
 });
 
 mostrarListaPessoas(pessoas);
 
-const pessoasCampos = filtrarPorCidade(pessoas,'Campos dos goytacazes');
+const pessoasCampos = filtrarPorCidade(pessoas, "Campos dos goytacazes");
 console.log("Pessoas em Campos dos goytacazes:");
 console.log(pessoasCampos);

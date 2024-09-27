@@ -10,32 +10,34 @@ Crie uma função chamada encontrarFuncionarioPorId que recebe o id de um funcio
 Utilize a função para encontrar um funcionário com um id existente e imprima no console as informações do funcionário encontrado. Em seguida, utilize a função para encontrar um funcionário com um id inexistente e imprima no console uma mensagem indicando que o funcionário não foi encontrado.*/
 
 const departamentos = [
-    {
-        id: 1,
-        nome: "Vendas",
-        funcionarios: [
-            { id: 101, nome: "Ana", cargo: "Vendedor" },
-            { id: 102, nome: "Carlos", cargo: "Gerente de vendas" }
-        ]
-    },
-    {
-        id: 2,
-        nome: "TI",
-        funcionarios: [
-            { id: 201, nome: "Maria", cargo: "Desenvolvedor" },
-            { id: 202, nome: "João", cargo: "Analista de sistemas" }
-        ]
-    }
+  {
+    id: 1,
+    nome: "Vendas",
+    funcionarios: [
+      { id: 101, nome: "Ana", cargo: "Vendedor" },
+      { id: 102, nome: "Carlos", cargo: "Gerente de vendas" },
+    ],
+  },
+  {
+    id: 2,
+    nome: "TI",
+    funcionarios: [
+      { id: 201, nome: "Maria", cargo: "Desenvolvedor" },
+      { id: 202, nome: "João", cargo: "Analista de sistemas" },
+    ],
+  },
 ];
 
 function encontrarFuncionarioPorId(id) {
-    for (const departamento of departamentos) {
-        const funcionarioEncontrado = departamento.funcionarios.find(funcionario => funcionario.id === id);
-        if (funcionarioEncontrado) {
-            return funcionarioEncontrado;
-        }
+  for (const departamento of departamentos) {
+    const funcionarioEncontrado = departamento.funcionarios.find(
+      (funcionario) => funcionario.id === id
+    );
+    if (funcionarioEncontrado) {
+      return funcionarioEncontrado;
     }
-    return null;
+  }
+  return null;
 }
 
 const funcionarioEncontrado1 = encontrarFuncionarioPorId(201);
@@ -45,4 +47,4 @@ console.log(funcionarioEncontrado1);
 // Encontra um funcionário com ID inexistente e imprime no console
 const funcionarioEncontrado2 = encontrarFuncionarioPorId(103);
 console.log("\nFuncionário encontrado (ID 103):");
-console.log(funcionarioEncontrado2)
+console.log(funcionarioEncontrado2);

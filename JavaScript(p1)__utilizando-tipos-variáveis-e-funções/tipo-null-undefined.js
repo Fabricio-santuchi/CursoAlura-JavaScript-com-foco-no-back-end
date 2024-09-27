@@ -1,5 +1,5 @@
 let nomeEstudante;
-const professora = 'Ana';
+const professora = "Ana";
 
 console.log(nomeEstudante);
 console.log(typeof nomeEstudante);

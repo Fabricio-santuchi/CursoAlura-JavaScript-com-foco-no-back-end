@@ -11,26 +11,29 @@
 // Chame o método classificarDesempenho e imprima no console a categoria de desempenho da pessoa.
 
 const pessoa = {
-    nome: 'Luna',
-    notas: [7.5, 9.5, 7.3, 8.0],
+  nome: "Luna",
+  notas: [7.5, 9.5, 7.3, 8.0],
 
-    calcularMediaNotas: function() {
-        return (this.notas.reduce((acumulador, elemento) => acumulador + elemento, 0) / this.notas.length).toFixed(2);
-    },
+  calcularMediaNotas: function () {
+    return (
+      this.notas.reduce((acumulador, elemento) => acumulador + elemento, 0) /
+      this.notas.length
+    ).toFixed(2);
+  },
 
-    classificarDesempenho: function(){
-        const media = this.calcularMediaNotas();
+  classificarDesempenho: function () {
+    const media = this.calcularMediaNotas();
 
-        if(media >= 9){
-            return `Desempenho excelente`;
-        }else if(media >= 7.5 && media < 9){
-            return `Bom desempenho`;
-        }else if(media >= 6 && media < 7.5){
-            return `Desempenho regular`;
-        }else{
-            return `Desempenho insuficiente`;
-        }
+    if (media >= 9) {
+      return `Desempenho excelente`;
+    } else if (media >= 7.5 && media < 9) {
+      return `Bom desempenho`;
+    } else if (media >= 6 && media < 7.5) {
+      return `Desempenho regular`;
+    } else {
+      return `Desempenho insuficiente`;
     }
+  },
 };
 
 const mediaCalculada = pessoa.calcularMediaNotas();

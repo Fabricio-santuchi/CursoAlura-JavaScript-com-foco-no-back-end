@@ -1,7 +1,7 @@
-const listaEstudantes = ['João', 'Ana', 'Caio', 'Lara', 'Marjorie', 'Leo'];
+const listaEstudantes = ["João", "Ana", "Caio", "Lara", "Marjorie", "Leo"];
 console.log(listaEstudantes);
 
-listaEstudantes.splice(1, 2, 'Rodrigo');
+listaEstudantes.splice(1, 2, "Rodrigo");
 console.log(listaEstudantes);
 
 /*

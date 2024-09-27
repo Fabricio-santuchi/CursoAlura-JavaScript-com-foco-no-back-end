@@ -8,7 +8,6 @@ const menorNumero = Math.min(...array);
 console.log(maiorNumero);
 console.log(menorNumero);
 
-
 /*
     fiz da maneira mais nova! ES6.
     o Math.max e Math.min funciona dessa maneira.

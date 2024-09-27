@@ -3,8 +3,8 @@ notas.push(7); // push(adiciona).
 console.log(notas);
 
 // Use o método reduce() para somar todos os valores do array
-let soma = notas.reduce(function(valorTotal,valorAtual){
-    return valorTotal + valorAtual;
+let soma = notas.reduce(function (valorTotal, valorAtual) {
+  return valorTotal + valorAtual;
 }, 0);
 
 let media = soma / notas.length;

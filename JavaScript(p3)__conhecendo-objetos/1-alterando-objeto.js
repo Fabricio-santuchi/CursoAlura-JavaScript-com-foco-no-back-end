@@ -1,18 +1,15 @@
 const estudante = {
-    nome: 'José silva',
-    idade: 32,
-    cpf: '12312312312',
-    turma: 'JavaScript'
-}
+  nome: "José silva",
+  idade: 32,
+  cpf: "12312312312",
+  turma: "JavaScript",
+};
 
-estudante.telefone = '(22)99900-2314'; // adiciona/altera a propriedade já existente
+estudante.telefone = "(22)99900-2314"; // adiciona/altera a propriedade já existente
 console.log(estudante);
 
-estudante.nome = 'José Souza'; // adiciona/altera a propriedade já existente.
-console.log(estudante)
-
-
-
+estudante.nome = "José Souza"; // adiciona/altera a propriedade já existente.
+console.log(estudante);
 
 /*
     Adicionando um nova propriedade ao objeto: estudante.telefone = '(22)99900-2314';

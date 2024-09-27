@@ -1,12 +1,11 @@
-const alunos = ['Ana','Marcos','Maria','Mauro'];
+const alunos = ["Ana", "Marcos", "Maria", "Mauro"];
 const medias = [7, 4.5, 8, 7.5];
 
 const reprovados = alunos.filter((aluno) => {
-   return aluno.length < 7;
-
+  return aluno.length < 7;
 });
 
-console.log(reprovados)
+console.log(reprovados);
 
 /*
     filter()

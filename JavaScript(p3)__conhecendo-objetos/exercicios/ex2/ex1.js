@@ -13,19 +13,18 @@
 // Dica: você pode usar um método de array para retirar os elementos dos colchetes e exibi-los como texto.
 
 const pessoa = {
-    nome: 'Fabricio',
-    idade: 24,
-    solteiro: false,
-    hobbies: ['Jogar', 'Estudar', 'Aprender novas tecnologias'], 
+  nome: "Fabricio",
+  idade: 24,
+  solteiro: false,
+  hobbies: ["Jogar", "Estudar", "Aprender novas tecnologias"],
 };
 
 function mostrarInfoPessoa(objeto) {
-    console.log(`
+  console.log(`
         Nome: ${pessoa.nome} (Tipo: ${typeof pessoa.nome}).
         idade: ${pessoa.idade} (Tipo: ${typeof pessoa.idade}).
         solteiro: ${pessoa.solteiro} (Tipo: ${typeof pessoa.solteiro}).
-        hobbies: ${pessoa.hobbies.join(', ')} (Tipo: ${ typeof pessoa.hobbies}).
+        hobbies: ${pessoa.hobbies.join(", ")} (Tipo: ${typeof pessoa.hobbies}).
     `);
 }
 mostrarInfoPessoa(pessoa);
-

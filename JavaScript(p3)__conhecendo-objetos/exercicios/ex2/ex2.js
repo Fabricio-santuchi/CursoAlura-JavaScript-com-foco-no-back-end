@@ -9,27 +9,24 @@
 
 // No final do arquivo infoPessoa.js, chame a função mostrarInfoPessoa para verificar se as informações atualizadas, incluindo o endereço, são exibidas corretamente no console.
 
-
-
-
 const pessoa = {
-    nome: 'Fabricio',
-    idade: 24,
-    solteiro: false,
-    hobbies: ['Jogar', 'Estudar', 'Aprender novas tecnologias'], 
-    endereco: {
-        rua: 'Dilce artiles martins',
-        cidade: 'Campos dos goytacazes',
-        estado: 'Rio de janeiro',
-    }
+  nome: "Fabricio",
+  idade: 24,
+  solteiro: false,
+  hobbies: ["Jogar", "Estudar", "Aprender novas tecnologias"],
+  endereco: {
+    rua: "Dilce artiles martins",
+    cidade: "Campos dos goytacazes",
+    estado: "Rio de janeiro",
+  },
 };
 
 function mostrarInfoPessoa(objeto) {
-    console.log(`
+  console.log(`
         Nome: ${pessoa.nome} (Tipo: ${typeof pessoa.nome}).
         idade: ${pessoa.idade} (Tipo: ${typeof pessoa.idade}).
         solteiro: ${pessoa.solteiro} (Tipo: ${typeof pessoa.solteiro}).
-        hobbies: ${pessoa.hobbies.join(', ')} (Tipo: ${ typeof pessoa.hobbies}).
+        hobbies: ${pessoa.hobbies.join(", ")} (Tipo: ${typeof pessoa.hobbies}).
         endereco: 
             rua: ${pessoa.endereco.rua}.
             cidade: ${pessoa.endereco.cidade}.

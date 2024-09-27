@@ -7,4 +7,4 @@ const estudanteReprovou = function (notaFinal, faltas) {
 }
 
 console.log(estudanteReprovou(6,5));
-console.log(estudanteReprovou(10,2));
+console.log(estudanteReprovou(10,2));s

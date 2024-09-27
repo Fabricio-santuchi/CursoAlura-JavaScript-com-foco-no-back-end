@@ -3,19 +3,19 @@
 //cria o array.
 const array = [];
 
-for(i=1;i<=5;i++){
-    array.push(i)
+for (i = 1; i <= 5; i++) {
+  array.push(i);
 }
 
 //exbi o array.
 function imprimeElementos(arr) {
-    for(i=0;i<arr.length;i++){
-        console.log(arr[i])
-    }
-    console.log();
+  for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+  console.log();
 
-    for (const valores of arr) {
-        console.log(valores);
-    }
+  for (const valores of arr) {
+    console.log(valores);
+  }
 }
 imprimeElementos(array);

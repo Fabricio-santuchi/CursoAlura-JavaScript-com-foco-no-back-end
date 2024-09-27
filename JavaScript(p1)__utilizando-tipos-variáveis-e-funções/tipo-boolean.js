@@ -1,8 +1,8 @@
-const estudante = 'Fabricio';
+const estudante = "Fabricio";
 const estAprovado = true;
 
-if(estAprovado){
-    console.log(`Está aprovado!`);
-}else{
-    console.log(`reprovado!`)
+if (estAprovado) {
+  console.log(`Está aprovado!`);
+} else {
+  console.log(`reprovado!`);
 }

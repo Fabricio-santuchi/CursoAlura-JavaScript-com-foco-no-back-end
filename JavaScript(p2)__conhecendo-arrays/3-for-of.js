@@ -1,9 +1,9 @@
-const notas = [10,6.5,8,7.5];
+const notas = [10, 6.5, 8, 7.5];
 
 let somaDasNotas = 0;
 
 for (const nota of notas) {
-    console.log(somaDasNotas += nota)
+  console.log((somaDasNotas += nota));
 }
 
 /*
@@ -26,10 +26,10 @@ for (const nota of notas) {
 
 const precos = [5.5, 6.2, 14, 19.5];
 
-let desconto = 0.90;
+let desconto = 0.9;
 
 for (let preco of precos) {
- preco = preco * desconto;
+  preco = preco * desconto;
 }
 
 console.log(precos);

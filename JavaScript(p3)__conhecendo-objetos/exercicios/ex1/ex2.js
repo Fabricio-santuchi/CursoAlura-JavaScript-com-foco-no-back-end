@@ -10,20 +10,20 @@
 const anoAtual = new Date().getFullYear();
 
 const livro = {
-    titulo: 'Astronomia: os astros, a ciência, a vida cotidiana',
-    autor: 'Marcelo Girardi Schappo',
-    anoPublicacao: 2022,
-    genero: 'Astronomia'
+  titulo: "Astronomia: os astros, a ciência, a vida cotidiana",
+  autor: "Marcelo Girardi Schappo",
+  anoPublicacao: 2022,
+  genero: "Astronomia",
 };
 
-livro.idadePublicacao = anoAtual - livro.anoPublicacao ;
+livro.idadePublicacao = anoAtual - livro.anoPublicacao;
 livro.mostraDetalhes = `
 \nDetalhes do Livro:
-Título: ${livro['titulo']}
-Autor: ${livro['autor']}
-Ano de Publicação: ${livro['anoPublicacao']}
-Gênero: ${livro['genero']}
-Idade de Publicação: ${livro['idadePublicacao']} anos\n
+Título: ${livro["titulo"]}
+Autor: ${livro["autor"]}
+Ano de Publicação: ${livro["anoPublicacao"]}
+Gênero: ${livro["genero"]}
+Idade de Publicação: ${livro["idadePublicacao"]} anos\n
 `;
 
 console.log(livro.mostraDetalhes);

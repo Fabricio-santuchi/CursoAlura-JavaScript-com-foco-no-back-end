@@ -1,2 +1,2 @@
-const dados = require('./dados.json');
+const dados = require("./dados.json");
 console.log(dados);

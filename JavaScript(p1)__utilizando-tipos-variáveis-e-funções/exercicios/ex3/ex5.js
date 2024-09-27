@@ -3,8 +3,8 @@
 const idadeMinima = 18;
 const idade = 21;
 
-if(idade >= idadeMinima){
-    console.log('Pode fazer a compra!');
-}else{
-    console.log('Não tem idade suficiente!');
+if (idade >= idadeMinima) {
+  console.log("Pode fazer a compra!");
+} else {
+  console.log("Não tem idade suficiente!");
 }

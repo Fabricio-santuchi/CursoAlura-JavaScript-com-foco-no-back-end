@@ -3,9 +3,9 @@ console.log(notas);
 notas.pop();
 console.log(notas);
 
-const valorTotal = notas.reduce((acumulador,valor) => {
-    return acumulador + valor;
-},0);
+const valorTotal = notas.reduce((acumulador, valor) => {
+  return acumulador + valor;
+}, 0);
 
 const media = valorTotal / notas.length;
 console.log(valorTotal);

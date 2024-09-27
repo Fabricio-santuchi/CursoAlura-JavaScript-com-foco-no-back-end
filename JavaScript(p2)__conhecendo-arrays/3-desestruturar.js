@@ -1,21 +1,20 @@
-const listaAluno = ['joao','juliana','caio','ana']; 
+const listaAluno = ["joao", "juliana", "caio", "ana"];
 const medias = [10, 8, 7.5, 9];
-const lista = [listaAluno,medias];
+const lista = [listaAluno, medias];
 
-function verifiquePessoa(aluno){
-    if(lista[0].includes(aluno)){
-        const [alunos, medias] = lista;
-        const indice = alunos.indexOf(aluno);
-        const mediaAluno = medias[indice];
-        console.log(`${aluno} está na lista e sua media é ${mediaAluno}`)
-    }else{
-        console.log('estudante não exite na lista!')
-    }
+function verifiquePessoa(aluno) {
+  if (lista[0].includes(aluno)) {
+    const [alunos, medias] = lista;
+    const indice = alunos.indexOf(aluno);
+    const mediaAluno = medias[indice];
+    console.log(`${aluno} está na lista e sua media é ${mediaAluno}`);
+  } else {
+    console.log("estudante não exite na lista!");
+  }
 }
 
-verifiquePessoa('joao');
-verifiquePessoa('joa');
-
+verifiquePessoa("joao");
+verifiquePessoa("joa");
 
 /*
     desestruturação.

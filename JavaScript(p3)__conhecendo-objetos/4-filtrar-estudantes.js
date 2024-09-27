@@ -1,14 +1,13 @@
-const estudantes = require('./estudantes.json');
+const estudantes = require("./estudantes.json");
 
-function filtraPorPropriedade(lista,propriedade){
-    return lista.filter((estudante) => {
-        return !estudante.endereco.hasOwnProperty(propriedade); // hasOwnProperty verifica se a propriedade tem dentro dele mesmo.
-    })
+function filtraPorPropriedade(lista, propriedade) {
+  return lista.filter((estudante) => {
+    return !estudante.endereco.hasOwnProperty(propriedade); // hasOwnProperty verifica se a propriedade tem dentro dele mesmo.
+  });
 }
 
-const listaEnderecosImcompletos = filtraPorPropriedade(estudantes,'cep');
+const listaEnderecosImcompletos = filtraPorPropriedade(estudantes, "cep");
 console.log(listaEnderecosImcompletos);
-
 
 /*
     ele verifica se a propriedade tem dentro da outra propriedade:

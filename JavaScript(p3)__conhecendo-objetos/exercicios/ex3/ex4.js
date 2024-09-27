@@ -7,18 +7,18 @@
 // Tente acessar a propriedade placa diretamente usando carro.placa e imprima no console o resultado obtido.
 
 const carro = {
-    marca: 'BMW',
-    modelo: 'M3 Competition',
-    ano: 2023,
-    cor: 'verde',
-    placa: "ABC1234"
-}
+  marca: "BMW",
+  modelo: "M3 Competition",
+  ano: 2023,
+  cor: "verde",
+  placa: "ABC1234",
+};
 
-Object.defineProperty(carro, 'placa', { enumerable: false});
+Object.defineProperty(carro, "placa", { enumerable: false });
 
 console.log("Propriedades Enumeráveis do Carro:");
 for (let chave in carro) {
-    console.log(chave, carro[chave]);
+  console.log(chave, carro[chave]);
 }
 
 const chavesEnumeradas = Object.keys(carro);
@@ -26,4 +26,4 @@ console.log("\nChaves Enumeráveis do Carro:");
 console.log(chavesEnumeradas);
 
 console.log("\nAcesso direto à propriedade placa:");
-console.log(carro.placa)
+console.log(carro.placa);

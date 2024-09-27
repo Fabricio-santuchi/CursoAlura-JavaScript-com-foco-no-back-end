@@ -11,18 +11,18 @@
 // Modifique o valor de uma propriedade no objeto carroComNovosDetalhes e imprima novamente o objeto no console para confirmar as alterações.
 
 const carro = {
-    marca: 'BMW',
-    modelo: 'M3 Competition',
-    ano: 2023,
-    cor: 'verde',
-    ligado: false
-}
+  marca: "BMW",
+  modelo: "M3 Competition",
+  ano: 2023,
+  cor: "verde",
+  ligado: false,
+};
 
 const carroNovo = {
-    marca: 'Chevrolet',
-    modelo: 'Camaro SS',
-    ano: 1969,
-    cor: 'preto',
+  marca: "Chevrolet",
+  modelo: "Camaro SS",
+  ano: 1969,
+  cor: "preto",
 };
 
 const carroComNovosDetalhes = { ...carro, ...carroNovo };
@@ -30,7 +30,7 @@ const carroComNovosDetalhes = { ...carro, ...carroNovo };
 console.log("Carro com Novos Detalhes:");
 console.log(carroComNovosDetalhes);
 
-carroComNovosDetalhes.cor = 'azul';
+carroComNovosDetalhes.cor = "azul";
 
 console.log("\nCarro com Detalhes Modificados:");
 console.log(carroComNovosDetalhes);

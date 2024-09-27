@@ -1,12 +1,12 @@
 const objPersonagem = {
-    nome: "Gandalf",
-    classe: "mago",
-    nivel: "20"
-}
+  nome: "Gandalf",
+  classe: "mago",
+  nivel: "20",
+};
 // para clonar ele vou usar o Object.create
 
 const objPersonagem2 = Object.create(objPersonagem);
-console.log(objPersonagem2)
+console.log(objPersonagem2);
 
 // resultado = {}
 
